@@ -1,28 +1,34 @@
 {
-    "name": "{{appTitle}}",
-    "version": "1.0.4",
-    "description": "{{appDesc}}",
-    "scripts": {
-        "build": "vite build",
-        "watch": "vite build --watch"
-    },
-    "dependencies": {
-        "vue": "^3.2.2",
-        "vue-router": "^4.0.11",
-        "vuex": "^4.0.2"
-    },
-    "devDependencies": {
-        "@types/chrome": "^0.0.154",
-        "@vitejs/plugin-vue": "^1.4.0",
-        "@vue/compiler-sfc": "^3.2.2",
-        "@rollup/plugin-commonjs": "^20.0.0",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^7.32.0",
-        "eslint-plugin-html": "^6.1.2",
-        "eslint-plugin-prettier": "^3.4.0",
-        "eslint-plugin-vue": "^7.16.0",
-        "prettier": "^2.3.2",
-        "vite": "^2.4.4",
-        "vite-plugin-vue-crx3": "^1.0.8"
-    }
+  "name": "aergo-connect-3.0",
+  "version": "3.0.0",
+  "description": "Wallet for Aergo Mainnet, Testnet, and private networks",
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.7.3",
+    "@herajs/crypto": "^1.2.1",
+    "@herajs/wallet": "^1.2.2",
+    "axios": "^1.1.3",
+    "end-of-stream": "^1.4.4",
+    "vue": "^3.2.2",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2",
+    "vuex-persist": "^3.1.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@types/chrome": "^0.0.154",
+    "@vitejs/plugin-vue": "^1.4.0",
+    "@vue/compiler-sfc": "^3.2.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.16.0",
+    "prettier": "^2.3.2",
+    "vite": "^2.4.4",
+    "vite-plugin-vue-crx3": "^1.0.8"
+  }
 }

@@ -1,43 +1,55 @@
 {
-    "manifest_version": 3,
-    "name": "__MSG_appTitle__",
-    "version": "1.0.0",
-    "description": "__MSG_appDescription__",
-    "host_permissions": ["<all_urls>"],
-    "background": {
-        "service_worker": "./libs/background/main.js"
-    },
-    "action": {
-        "default_title": "__MSG_actionTitle__",
-        "default_popup": "./libs/popup.html",
-        "default_icon": {
-            "16": "/assets/images/icon16.png",
-            "32": "/assets/images/icon32.png",
-            "48": "/assets/images/icon48.png",
-            "64": "/assets/images/icon64.png",
-            "128": "/assets/images/icon128.png"
-        }
-    },
-    "icons": {
-        "16": "/assets/images/icon16.png",
-        "32": "/assets/images/icon32.png",
-        "48": "/assets/images/icon48.png",
-        "64": "/assets/images/icon64.png",
-        "128": "/assets/images/icon128.png"
-    },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["./libs/content/info.js"],
-            "run_at": "document_idle"
-        }
-    ],
-    "options_page": "./libs/options.html",
-    "default_locale": "{{manifestLocale}}",
-    "chrome_url_overrides": {
-        "newtab": "./libs/newtab.html"
-    },
-    "content_security_policy": {
-        "extension_pages": "script-src 'self'; object-src 'self';"
+  "manifest_version": 3,
+  "name": "Aergo Connect 3.0",
+  "version": "3.0.0",
+  "description": "Wallet for Aergo Mainnet, Testnet, and private networks",
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "./libs/background/main.js",
+    "type": "module"
+  },
+
+  "action": {
+    "default_title": "Aergo Connect 3.0",
+    "default_popup": "./libs/popup.html",
+    "default_icon": {
+      "16": "/assets/images/icon16.png",
+      "32": "/assets/images/icon32.png",
+      "48": "/assets/images/icon48.png",
+      "64": "/assets/images/icon64.png",
+      "128": "/assets/images/icon128.png"
     }
+  },
+  "icons": {
+    "16": "/assets/images/icon16.png",
+    "32": "/assets/images/icon32.png",
+    "48": "/assets/images/icon48.png",
+    "64": "/assets/images/icon64.png",
+    "128": "/assets/images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./libs/content/info.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "./libs/options.html",
+  "default_locale": "en",
+  "chrome_url_overrides": {
+    "newtab": "./libs/newtab.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "permissions": [
+    "activeTab",
+    "unlimitedStorage",
+    "clipboardWrite",
+    "contextMenus",
+    "idle",
+    "storage",
+    "system.display",
+    "notifications"
+  ]
 }

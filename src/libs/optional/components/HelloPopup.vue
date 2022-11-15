@@ -1,11 +1,8 @@
 <template>
-    <div>
-        optional示例页面{{ a+b }}
-    </div>
+  <div>optional示例页面{{ a + b }}</div>
 </template>
 <script setup>
-const a = 1
-const b = 2
+const a = 1;
+const b = 2;
 </script>
-<style scoped>
-</style>
+<style scoped></style>
